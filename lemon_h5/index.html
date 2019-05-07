@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <link href="css/mui.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/mui.picker.min.css">
+
+    <link rel="stylesheet" href="css/mui/style.css">
+
+</head>
+
+<body>
+    <!-- 主界面不动、菜单移动 -->
+    <!-- 侧滑导航根容器 -->
+    <div class="mui-off-canvas-wrap mui-draggable mui-slide-in">
+        <!-- 菜单容器 -->
+        <aside class="mui-off-canvas-left asideList" id="offCanvasSide">
+            <div class="mui-scroll-wrapper">
+                <div class="mui-scroll aside-list">
+                    <!-- 菜单具体展示内容 -->
+                    <div>
+                        <h4>收支类型</h4>
+                        <ul>
+                            <li>全部支出</li>
+                            <li>全部输入</li>
+                            <li>全部其他</li>
+                        </ul>
+
+                    </div>
+                    <div>
+                        <h4>收支分类</h4>
+                        <ul>
+                            <li>运动</li>
+                            <li>运动</li>
+                            <li>运动</li>
+                            <li>运动</li>
+                            <li>运动</li>
+                            <li>运动</li>
+                            <li>运动</li>
+                            <li>运动</li>
+                            <li>运动</li>
+                            <li>运动</li>
+                            <li>运动</li>
+                            <li>运动</li>
+                            <li>运动</li>
+                            <li>运动</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>圈子</h4>
+                        <ul>
+                            <li>个人账单</li>
+                            <li>寝室</li>
+                            <li>共享</li>
+                        </ul>
+                    </div>
+                    <div class="result"><span>重置</span><span>确定</span></div>
+                </div>
+            </div>
+        </aside>
+        <!-- 主页面容器 -->
+        <div class="mui-inner-wrap box">
+            <!-- 主页面标题 -->
+            <header class="mui-bar mui-bar-nav head-nav">
+                <div class="first-nav">
+                    <span>年花费(元)</span>
+                    <ul>
+                        <li class="clickM"><b class="getYear">月</b> <span class="mui-icon mui-icon-arrowdown icon"></span></li>
+                        <li class="clicknow"><b class="getTimer">2018-01</b><span class="mui-icon mui-icon-arrowdown icon"></span></li>
+                    </ul>
+                </div>
+                <div class="second-nav">
+                    <span class="count"></span>
+                </div>
+                <div class="three-nav">
+                    <div>
+                        <p>年收入：<span class="yearCount"></span></p>
+                    </div>
+                    <div>
+                        <p>设置预算 <span class="mui-icon mui-icon-gear"></span></p>
+                    </div>
+                </div>
+            </header>
+
+            <nav class="mui-bar mui-bar-tab footer-nav">
+                <a class="mui-tab-item mui-active">
+                    <span class="mui-icon mui-icon-home"></span>
+                    <span class="mui-tab-label">首页</span>
+                </a>
+                <a class="mui-tab-item">
+                    <span class="mui-icon mui-icon-phone"></span>
+                    <span class="mui-tab-label">电话</span>
+                </a>
+                <a class="mui-tab-item">
+                    <span class="mui-icon mui-icon-email"></span>
+                    <span class="mui-tab-label">邮件</span>
+                </a>
+                <a class="mui-tab-item">
+                    <span class="mui-icon mui-icon-gear"></span>
+                    <span class="mui-tab-label">设置</span>
+                </a>
+            </nav>
+            <div class="mui-content mui-scroll-wrapper content">
+                <div class="addMoney">
+                    <a href="#offCanvasSide" class="mui-icon mui-action-menu mui-icon-bars mui-pull-left"></a>
+                    <p>支出<span class="expend"></span></p>
+                    <p>收入<span class="income"></span></p>
+                    <p>结余<span class="surplus"></span></p>
+                </div>
+                <div class="mui-scroll">
+                    <!-- 主界面具体展示内容 -->
+                    <ul id="OA_task_1" class="mui-table-view type-table">
+
+
+
+
+                    </ul>
+
+
+                </div>
+            </div>
+            <div class="mui-off-canvas-backdrop"></div>
+            <button type="button" class="mui-icon mui-icon-plus add" id="add"></button>
+        </div>
+    </div>
+    <script src="./js/libs/require.js" async="true" defer data-main="./js/index.js"></script>
+
+</body>
+
+</html>

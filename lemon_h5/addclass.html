@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <title>Hello MUI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <!--标准mui.css-->
+    <link rel="stylesheet" href="./css/mui.min.css">
+    <!--App自定义的css-->
+    <link rel="stylesheet" type="text/css" href="./css/app.css">
+    <link rel="stylesheet" href="./css/mui.picker.min.css">
+    <link rel="stylesheet" href="./css/mui/index.css">
+    <style>
+        @font-face {
+            font-family: uc-nexus-iconfont;
+            src: url(chrome-extension://pogijhnlcfmcppgimcaccdkmbedjkmhi/res/font_9qmmi8b8jsxxbt9.woff) format('woff'), url(chrome-extension://pogijhnlcfmcppgimcaccdkmbedjkmhi/res/font_9qmmi8b8jsxxbt9.ttf) format('truetype')
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="mui-content">
+        <div style="padding: 10px 10px;" class="header-nav">
+            <div>
+                <div>
+                    <span class="mui-icon mui-icon-back"></span>
+                </div>
+                <div class="type">
+                    <a class="mui-active">
+							支出
+						</a>
+                    <a>
+							收入
+						</a>
+                    <a>
+							转账
+						</a>
+                </div>
+                <div>
+
+                </div>
+            </div>
+            <div>
+                <p><input type="text" value="0:00" class="money"></p>
+            </div>
+
+        </div>
+        <div class="list">
+            <div id="item1" class="mui-control-content mui-active">
+                <div class="mui-slider">
+                    <div class="mui-slider-group" id="group">
+
+                        <!--第二个内容区-->
+                        <div class="mui-slider-item">
+                            <dl class="customer">
+                                <dt class="mui-icon mui-icon-plusempty "></dt>
+                                <dd>自定义</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="person">
+        <ul>
+            <li class="addTime"><span class="mui-icon mui-icon-home"></span><b class="timeHtml">2019-10-1</b></li>
+            <li><span class="mui-icon mui-icon-minus"></span>个人账单</li>
+            <li><span class="mui-icon mui-icon-reload"></span>不选账户</li>
+        </ul>
+    </div>
+    <div class="counter">
+        <ul>
+            <li>
+                <span>7</span>
+                <span>4</span>
+                <span>1</span>
+                <span>.</span>
+            </li>
+            <li>
+                <span>8</span>
+                <span>5</span>
+                <span>2</span>
+                <span>0</span>
+            </li>
+            <li>
+                <span>9</span>
+                <span>6</span>
+                <span>3</span>
+                <span>X</span>
+            </li>
+            <li class="finesh">
+                完成
+            </li>
+        </ul>
+    </div>
+    <script src="js/libs/require.js" async="true" defer data-main="./js/addclass.js"></script>
+</body>
+
+</html>

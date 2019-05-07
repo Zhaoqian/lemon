@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+b {
+    font-weight: 500;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    .header-nav {
+        height: 150px;
+        background: #ffe141;
+        >div:first-child {
+            display: flex;
+            justify-content: space-between;
+            >div:first-child {
+                >span.mui-icon {
+                    font-size: 20px;
+                    font-weight: 600;
+                    line-height: 40px;
+                }
+            }
+        }
+        >div:nth-child(2) {
+            margin-top: 10px;
+            height: 70px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            >p {
+                width: 90%;
+                height: 100%;
+                display: flex;
+                align-items: flex-end;
+                border-bottom: 2px solid #000;
+                justify-content: center;
+                >input {
+                    font-size: 22px;
+                    color: #000;
+                    font-weight: 700;
+                    background: #ffe141;
+                    border: 0;
+                    outline: none;
+                    text-align: center;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    .type {
+        width: 200px;
+        height: 40px;
+        border-radius: 20px;
+        display: flex;
+        font-size: 15px;
+        font-weight: 400;
+        position: relative;
+        overflow: hidden;
+        border: 1px solid #007aff;
+        border-radius: 20px;
+        background-color: transparent;
+        >a {
+            flex: 1;
+            height: 100%;
+            line-height: 40px!important;
+            display: inline-block;
+            text-align: center;
+        }
+        >a:not(:last-child) {
+            border-right: 1px solid #ccc;
+        }
+        >a.mui-active {
+            background: #007aff;
+            color: #fff;
+        }
+    }
+    .list {
+        height: 200px;
+        >div {
+            height: 100%;
+        }
+        .mui-table-view {
+            display: flex;
+            li {
+                height: 100px;
+            }
+        }
+        .mui-slider {
+            height: 100%;
+            background: #fff;
+            .mui-slider-group {
+                height: 100%;
+                .mui-slider-item {
+                    width: 100%;
+                    height: 100%;
+                    >dl {
+                        width: 25%;
+                        float: left;
+                        height: 50%;
+                        text-align: center;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        >dt {
+                            width: 50px;
+                            background: #e7e7e7;
+                            height: 50px;
+                            border-radius: 100%;
+                            text-align: center;
+                            line-height: 50px;
+                            margin-bottom: 5px;
+                        }
+                        >dt.mui-icon {
+                            font-size: 35px;
+                        }
+                        >dt.active {
+                            background: #ffe141;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .person {
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+        margin-top: 170px;
+        >ul {
+            width: 100%;
+            display: flex;
+            >li {
+                flex: 1;
+                text-align: center;
+                >span {
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+    .counter {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        >ul {
+            width: 100%;
+            display: flex;
+            border-top: 1px solid #e2e2e2;
+            >li {
+                display: flex;
+                width: 100%;
+                flex-direction: column;
+                >span {
+                    height: 40px;
+                    text-align: center;
+                    line-height: 40px;
+                    border-bottom: 1px solid #e2e2e2;
+                    border-right: 1px solid #e2e2e2;
+                }
+            }
+            >li:last-child {
+                line-height: 160px;
+                text-align: center;
+                border-bottom: 1px solid #e2e2e2;
+            }
+        }
+    }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "lemon_h5",
+  "version": "1.0.0",
+  "description": "柠檬记账前端",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zhaoqian/lemon_h5.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Zhaoqian/lemon_h5/issues"
+  },
+  "homepage": "https://github.com/Zhaoqian/lemon_h5#readme",
+  "dependencies": {
+    "gulp-sass": "^4.0.2",
+    "gulp-webserver": "^0.9.1"
+  }
+}

@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.asideList {
+    background: #fff!important;
+    div.aside-list {
+        >div.result {
+            margin-top: 30px;
+        }
+        >div {
+            margin: 10px 10px;
+            h4 {
+                margin: 10px 0;
+            }
+            >ul {
+                display: flex;
+                flex-wrap: wrap;
+                li {
+                    margin: 5px;
+                    padding: 2px 5px;
+                    border: 1px solid #ccc;
+                    border-radius: 5px;
+                    font-size: 14px;
+                }
+            }
+            >span {
+                padding: 5px 20px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+.head-nav {
+    height: 120px;
+    background: #ffe344 !important;
+    .first-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10px 0;
+        height: 30px;
+        >ul {
+            display: flex;
+            height: 30px;
+            align-items: center;
+            >li {
+                height: 100%;
+                line-height: 30px;
+                padding: 2px 5px;
+                border: 1px solid #000;
+                border-radius: 5px;
+                margin: 0 10px;
+                span.icon {
+                    padding-top: 0;
+                }
+            }
+        }
+    }
+    .second-nav {
+        >span {
+            font-size: 25px;
+        }
+    }
+    .three-nav {
+        display: flex;
+        align-items: center;
+        >div {
+            margin-right: 10px;
+            height: 54px;
+            line-height: 54px;
+            >p {
+                color: #000;
+                span {
+                    font-weight: 600;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+.content {
+    height: 570px;
+    margin-top: 120px;
+    padding: 10px 0!important;
+    >div.addMoney {
+        height: 50px;
+        display: flex;
+        >a {
+            margin-top: 10px;
+        }
+        >p {
+            height: 50px;
+            margin: 0 40px;
+            font-size: 20px;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            >span {
+                font-size: 14px;
+            }
+            >span.expend {
+                color: #f47c86;
+            }
+            >span.income {
+                color: #4adcad
+            }
+        }
+    }
+    >div.mui-scroll {
+        overflow-y: auto;
+        height: 520px;
+    }
+    ul.type-table {
+        >li {
+            height: 70px;
+            >div.ullist {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                dl {
+                    display: flex;
+                    height: 100%;
+                    align-items: center;
+                    dt {
+                        background: #fee243;
+                        padding: 10px;
+                        border-radius: 100%;
+                        margin-right: 10px;
+                    }
+                    dd {
+                        font-size: 14px;
+                        >div:nth-child(1) {
+                            font-size: 17px;
+                            font-weight: 600;
+                        }
+                        >div:nth-child(2) {
+                            color: #ccc;
+                            width: 100%;
+                        }
+                    }
+                }
+                >span.green {
+                    color: #4adcad;
+                }
+                >span.red {
+                    color: #f47c86;
+                }
+            }
+        }
+    }
+    button.mui-icon {
+        font-size: 60px!important;
+    }
+}
+
+.mui-inner-wrap {
+    position: relative;
+    >button.add {
+        position: absolute;
+        bottom: 50px;
+        width: 70px;
+        height: 70px;
+        border-radius: 100%;
+        background: #fee04c;
+        left: 45%;
+        z-index: 10;
+    }
+}
